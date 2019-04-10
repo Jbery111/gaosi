@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <title>详情页</title>
+        <link rel="stylesheet" href="/css/detail.css">
+        <script type="text/javascript" src="/lib/jquery/jquery-3.2.1.js"></script>
+	</head>
+	<body> 
+<!-- header -->
+    <div id="header-container"></div>
+    <!-- breadcrumb -->
+		<div class="breadcrumb">
+			<ul>
+				<li><a href="javascript:;">首页&nbsp;></a></li>
+				<li><a href="javascript:;">雪肌精&nbsp;></a></li>
+				<li><a href="javascript:;">护肤&nbsp;></a></li>
+				<li><a href="javascript:;">洁肤&nbsp;></a></li>
+				<li><a href="javascript:;"><b>雪肌精柔净洗颜乳&nbsp;</b></a></li>
+			</ul>
+		</div>
+		<!-- productDetails -->
+		<div class="productDetails">
+			<div class="productDetails-wrap">
+				<div class="productDetails-content-img">
+					<img src="../img/productDetails.jpg" >
+				</div>
+				<div class="productDetails-conttnt-info">
+					<div class="productDetails-conttnt-info-img">
+						<img src="../img/lanse.png" >
+					</div>
+					<h1>雪肌精&nbsp;&nbsp;柔净洗颜乳</h1>
+					<div class="productDetails--product--price">
+						￥280
+					</div>
+					<div class="productDetails--product--select">
+						<div class="select--specification">140ml</div>
+						<div class="select--num">
+							<div class="spinner--box"><input type="text" name="num" id="num" value="1" data-min="1"></div>
+							<div class="spinner--arrow">
+									<div class="topArrow" data-spin="up">
+										<img src="../img/xiaoyu_up.jpg" alt="">
+									</div>
+									<div class="bottomArrow" data-spin="down">
+									</div>
+								</div>
+						</div>
+					</div>
+					<div class="productDetails--product--button btn-box">
+							<button id="buyNow" type="button" class="button1">立即购物</button>
+							<button id="addbutton" type="button" class="button2">加入购物车</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- recommend--carousel -->
+		<div class="recommend--carousel">
+			<h1>推&nbsp;荐&nbsp;搭&nbsp;配</h1>
+			<div class="swiper-container">
+				<a href="javascript:;">
+					<dl>
+						<dt><img src="../img/recommend.jpg"></dt>
+						<dd>
+							<p class="recommend--product--name">雪肌精 盈润新颜套装</p>
+							<p class="recommend--product--price">¥ 360</p>
+						</dd>
+					</dl>
+				</a>
+			</div>
+		</div>
+		<!-- productDetails--pdp -->
+		<div class="productDetails--pdp">
+			<div class="productDetails--pdp-wrap">
+				<ul class="nav nav-tabs">
+					<li>产品介绍</li>
+					<li>使用方法</li>
+				</ul>
+				<div class="instocter">
+					<div class="tab-pane fade active">
+						<div class="tab-pane-wrap">
+							<div class="title"><img src="../img/chanping1.jpg" alt=""></div>
+							<div class="container">
+								<p>于洗颜乳中添加了温和的氨基酸系洗净成分、保湿成分以及源自乳液的柔软保湿成分，柔润的泡沫能充分洗净肌肤并保持其润泽。</p>
+								<p>去除引致肌肤晦暗的老化角质及污垢，同步提升肌肤的健康度和莹透感。</p>
+								<p>洗颜后，能令后续护肤品更易渗透于肌肤，改善肌肤的细致度。</p>
+								<p>洗颜后，能令后续护肤品更易渗透于肌肤。</p>
+							</div>
+						</div>
+					</div>
+					<div class="productDetails--product--usage">
+						<div class="product--usage">
+							<div class="title"><img src="../img/shiyongfangfa.jpg" alt=""></div>
+							<div class="container">
+								<p>于洗颜乳中添加了温和的氨基酸系洗净成分、保湿成分以及源自乳液的柔软保湿成分，柔润的泡沫能充分洗净肌肤并保持其润泽。</p>
+								<p>去除引致肌肤晦暗的老化角质及污垢，同步提升肌肤的健康度和莹透感。</p>
+								<p>洗颜后，能令后续护肤品更易渗透于肌肤，改善肌肤的细致度。</p>
+								<p>洗颜后，能令后续护肤品更易渗透于肌肤。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+    <!-- footer -->
+    <footer id="footer-container"></footer>
+    <script src="../lib/requirejs/require.js" data-main="/js/detail.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

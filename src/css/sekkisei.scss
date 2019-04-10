@@ -1,0 +1,198 @@
+@import "moudel/style";
+@import "moudel/header";
+@import "moudel/footer";
+
+//header下面
+.breadcrumb{
+    ul{
+        width: 100%;
+        height: 59px;
+        padding-left: 20px;
+        padding-top: 20px;
+        box-sizing: border-box;
+        li{
+            width: 30px;
+            height: 19px;
+            float: left;
+            a{
+                font-size: 14px;
+                color: #7c878e;
+            }
+        }
+        .active{
+            width: 81px;
+           background: url(../img/xiaoyu1.jpg) no-repeat 13px 9px;
+           padding-left: 30px;
+           box-sizing: border-box;
+        }
+    }
+}
+.filter--category--title{
+        width: 100%;
+        height: 92px;
+        box-sizing: border-box;
+        overflow: hidden;
+        padding-left: 15px;
+        border-bottom: 1px solid #e5e5e5;
+    .filter--category--title1{
+        margin-top:15px; 
+        margin-bottom: 15px;
+        color: #7c878e;
+    h2{
+        font-size: 24px;
+        font-weight: 400;
+    }
+    
+    }
+    .filter--category--title2{
+        h5{
+            color: #7c878e;
+        }
+    }
+}
+.filter--lever--one{
+    width: 100%;
+    height: 130px;
+    box-sizing: border-box;
+    border-bottom: 1px solid  #e5e5e5;
+    padding-left: 15px;
+    div{
+        display: block;
+        width: 96px;
+        height: 16px;
+        background: url(../img/xiaoyu2.jpg) no-repeat 1px center;
+        padding-left: 30px;
+        font-size: 16px;
+        font-weight: bolder;
+        color: #7c878e;
+        margin-top: 18px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+       
+    }
+    span{
+        color: #a0a0a0;
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+}
+.category--list--content{
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    color: #7c878e;
+    border-bottom: 1px solid #e5e5e5;
+    h2{
+        width: 72px;
+        height: 26px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    div{
+        width: 114px;
+        height: 37px;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+}
+.content--list{
+    ul{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        color: #7c878e;
+        li{
+            width: 33.3%;
+            height: 25%;
+            background-color: #fff;
+            margin-top: 55px;
+            .product{
+                display: block;
+                .product--img{
+                    width: 100%;
+                    height: 250px;
+                    display: block;
+                    display: flex;
+                    justify-content: center;
+                    img{
+                    width: 250px;
+                    height: 250px;
+                    display: block;
+                    }
+                    
+                }
+                .product--brand{
+                    width: 100%;
+                    height: 50px;
+                    display: block;
+                    line-height: 25px;
+                    text-align: center;
+                }
+                .product--name{
+                    height: 50px;
+                    width: 100%;
+                    display: block;
+                    line-height: 50px;
+                    text-align: center;
+                }
+                .product--price{
+                    display: block;
+                    width: 100%;
+                    height: 50px;
+                    line-height: 25px;
+                    text-align: center;
+                }
+                .product--button{
+                    display: flex;
+                    justify-content: center;
+                    a{
+                        display: block;
+                        width: 135px;
+                        height: 40px;
+                        background-color:#7c878e;
+                        text-align: center;
+                        line-height: 40px;
+                        color: #fff;
+                    }
+                }
+        }
+    }
+}
+}
+// page
+
+.Page{
+    width: 100%;
+    height: 135px;
+    display: flex;
+    justify-content: center;
+
+    ul{
+        display: flex;
+        height: 35px;
+        margin:50px auto; 
+        li{
+            width: 35px;
+            height: 33px;
+            border: 1px solid;
+            text-align: center;
+            line-height: 33px;
+            a{
+                color: #7c878e;
+            }
+        } 
+        .active{
+            background-color:#7c878e;
+            a{
+                color: white;
+            }
+        }
+    }
+    
+    
+}

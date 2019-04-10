@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <title>雪肌精</title>
+        <link rel="stylesheet" href="/css/sekkisei.css">
+        
+	</head>
+	<body> 
+<!-- header -->
+    <div id="header-container"></div>
+    <!-- breadcrumb -->
+    <div class="breadcrumb">
+        <ul>
+            <li><a href="../index.html">首页</a></li>
+            <li class="active"><a href="../html/sekkisei.html">雪肌精</a></li>
+        </ul>
+    </div>
+
+    <!-- filter--category--title -->
+    <div class="filter--category--title">
+        <div class="filter--category--title1"><h2>雪肌精</h2></div>
+        <div class="filter--category--title2"><h5>筛选产品</h5></div>
+    </div>
+    <!-- filter--lever--one -->
+    <div class="filter--lever--one">
+        <div>价格区间</div>
+        <span>从&nbsp;&nbsp;30元&nbsp;&nbsp;到&nbsp;&nbsp;880元</span>
+    </div>
+    <!-- category--list--content -->
+    <div class="category--list--content">
+        <h2>雪肌精</h2>
+        <div class="content--sort--wrap">上市时间&nbsp;&nbsp;<span><a href="javascript:;"><img src="../img/xiaoyu2.jpg"></a></span></div>
+    </div>
+    <!-- content--list -->
+    <div class="content--list" id="content--list"></div>
+        <!-- <ul id="catyListContainer">
+            <li>
+                <span class="product">
+                    <span class="product--img"><a href="javascript:;"><img src="../img/product.png"></a></span>
+                    <span class="product--brand">雪肌精</span>
+                    <span class="product--name">雪肌精 纯怡 化妆水Ⅰ230ml</span>
+                    <span class="product--spec--box">
+                        <span class="product--price">¥ 320</span>
+                    </span>
+                    <span class="product--button"><a href="javascript:;">立即购买</a></span>
+                </span>
+            </li>
+        </ul> -->
+
+
+        <script type="text/html" id="catyList">
+            <ul id="catyListContainer">
+                {{each list item}}
+                <li>
+                    <span class="product">
+                        <span class="product--img"><a href="javascript:;"><img src="{{item.img}}"></a></span>
+                        <span class="product--brand">{{item.title}}</span>
+                        <span class="product--name">{{item.name}}</span>
+                        <span class="product--spec--box">
+                            <span class="product--price">¥ {{item.price}}</span>
+                        </span>
+                        <span class="product--button"><a href="javascript:;">立即购买</a></span>
+                    </span>
+                </li>
+                {{/each}}
+            </ul>
+          </script>
+
+        
+    
+    <div class="Page navigation">
+        <ul class="pagination" id="pagination">
+            <li>
+                <a class="prev" href="#">
+                    <span class="prev" aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li id="nextPage">
+                <a class="next" href="#">
+                    <span class="next" aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- footer -->
+    <footer id="footer-container"></footer>
+    <script type="text/javascript" src="/lib/jquery/jquery-3.2.1.js"></script>
+    <script src="../lib/requirejs/require.js" data-main="/js/sekkisei.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
