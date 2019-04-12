@@ -3,6 +3,7 @@ require(["require.config"],function(){
 		console.log(1);
 		class Sekkisei{
 			constructor() {
+				new header().init();
 				this.render();
 			}
 			

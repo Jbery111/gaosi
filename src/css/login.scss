@@ -1,0 +1,74 @@
+*{padding: 0;margin: 0}
+ul li{list-style: none}
+a{text-decoration: none}
+header{
+    width: 100%;
+    height: 46px;
+    .header-wrap{
+        width: 96.7%;
+        height: 46px;
+        margin: 0 auto;
+        img{
+            display: inline-block;
+            width: 89px;
+            height: 34px;
+        }
+    }
+}
+.login{
+    width:100%;
+    height: 329px;
+    .formBox{
+        width: 350px;
+        height: 329px;
+        margin: 0 auto;
+        margin-top: 150px;
+        .formBox--title{
+            width: 100%;
+            height: 184px;
+            
+            letter-spacing: 3px;
+            box-sizing: border-box;
+            .formBox--container{
+                width: 100%;
+                height: 44px;
+                padding: 80px 0 60px;
+                font-size: 40px;
+                text-align: center;
+                font-family: inherit;
+                font-weight: 500;
+                color: #7c878e;
+            }
+        }
+        .box{
+            width: 100%;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-between;
+            align-items: center;
+            input{
+                width: 348px;
+                height: 40px;
+                padding: 6px 12px;
+                box-sizing: border-box;
+            }
+
+        }
+        .box1{
+            width: 100%;
+            height: 40px;
+            font-family: "Helvetica Neue", Helvetica, Arial, "hyzj", "SimHei", "SimSun", sans-serif;
+            font-size: 14px;
+            line-height: 1.42857;
+            color: #7c878e;
+        }
+        .box2{
+            width: 100%;
+            height: 40px;
+            background-color: #7c878e;
+            text-align: center;
+            line-height: 40px;
+        }
+    }
+}

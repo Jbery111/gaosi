@@ -12,36 +12,36 @@
     <!-- breadcrumb -->
 		<div class="breadcrumb">
 			<ul>
-				<li><a href="javascript:;">首页&nbsp;></a></li>
-				<li><a href="javascript:;">雪肌精&nbsp;></a></li>
+				<li><a href="/index.html">首页&nbsp;></a></li>
+				<li><a href="/src/html/list.html?id=1">雪肌精&nbsp;></a></li>
 				<li><a href="javascript:;">护肤&nbsp;></a></li>
 				<li><a href="javascript:;">洁肤&nbsp;></a></li>
 				<li><a href="javascript:;"><b>雪肌精柔净洗颜乳&nbsp;</b></a></li>
 			</ul>
 		</div>
-		<!-- productDetails -->
+		<div class="detail-container" id="detail-container"></div>
+		<script type="text/html" id="detailList">
 		<div class="productDetails">
 			<div class="productDetails-wrap">
 				<div class="productDetails-content-img">
-					<img src="../img/productDetails.jpg" >
+					<img src="{{img}}" >
 				</div>
 				<div class="productDetails-conttnt-info">
 					<div class="productDetails-conttnt-info-img">
-						<img src="../img/lanse.png" >
+						<img src="{{titleImg}}"/>
 					</div>
-					<h1>雪肌精&nbsp;&nbsp;柔净洗颜乳</h1>
+					<h1>{{title}}</h1>
 					<div class="productDetails--product--price">
-						￥280
+						￥{{price}}
 					</div>
 					<div class="productDetails--product--select">
-						<div class="select--specification">140ml</div>
+						<div class="select--specification">{{ml}}ml</div>
 						<div class="select--num">
 							<div class="spinner--box"><input type="text" name="num" id="num" value="1" data-min="1"></div>
 							<div class="spinner--arrow">
-									<div class="topArrow" data-spin="up">
-										<img src="../img/xiaoyu_up.jpg" alt="">
+									<div class="topArrow" data-spin="up" id="topArrow">
 									</div>
-									<div class="bottomArrow" data-spin="down">
+									<div class="bottomArrow" data-spin="down" id="bottomArrow">
 									</div>
 								</div>
 						</div>
@@ -53,21 +53,50 @@
 				</div>
 			</div>
 		</div>
-		<!-- recommend--carousel -->
 		<div class="recommend--carousel">
 			<h1>推&nbsp;荐&nbsp;搭&nbsp;配</h1>
 			<div class="swiper-container">
-				<a href="javascript:;">
+					<a href="/html/detail.html?id={{imgId[0].id}}">
 					<dl>
-						<dt><img src="../img/recommend.jpg"></dt>
+						<dt><img src="{{imgId[0].img}}"></dt>
 						<dd>
-							<p class="recommend--product--name">雪肌精 盈润新颜套装</p>
-							<p class="recommend--product--price">¥ 360</p>
+							<p class="recommend--product--name">{{imgId[0].name}}</p>
+							<p class="recommend--product--price">¥ {{imgId[0].price}}</p>
 						</dd>
 					</dl>
 				</a>
+				<a href="/html/detail.html?id={{imgId[1].id}}">
+					<dl>
+						<dt><img src="{{imgId[1].img}}"></dt>
+						<dd>
+							<p class="recommend--product--name">{{imgId[1].name}}</p>
+							<p class="recommend--product--price">¥ {{imgId[1].price}}</p>
+						</dd>
+					</dl>
+				</a>
+				<a href="/html/detail.html?id={{imgId[2].id}}">
+					<dl>
+						<dt><img src="{{imgId[2].img}}"></dt>
+						<dd>
+							<p class="recommend--product--name">{{imgId[2].name}}</p>
+							<p class="recommend--product--price">¥ {{imgId[2].price}}</p>
+						</dd>
+					</dl>
+				</a>
+				<a href="/html/detail.html?id={{imgId[3].id}}">
+					<dl>
+						<dt><img src="{{imgId[3].img}}"></dt>
+						<dd>
+							<p class="recommend--product--name">{{imgId[3].name}}</p>
+							<p class="recommend--product--price">¥ {{imgId[3].price}}</p>
+						</dd>
+					</dl>
+				</a>
+				
 			</div>
 		</div>
+		</script>
+		
 		<!-- productDetails--pdp -->
 		<div class="productDetails--pdp">
 			<div class="productDetails--pdp-wrap">

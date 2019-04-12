@@ -1,12 +1,14 @@
 require(["require.config"],function(){
-	require(["jquery","Swiper","header","footer"],function($,Swiper,header){
+	require(["jquery","Swiper","header","url","template","footer",],function($,Swiper,header,url,template,footer){
 		console.log(1);
 		class Index {
 			constructor (){
+				new header().init();
 				this.textfield = $("#textfield");
 				this.searchContainer = $("#search_result_search_fm");
 				this.search();
 				// this.caty();
+				this.render();
 			}
 			search () {
 				let _this = this;
@@ -65,6 +67,26 @@ require(["require.config"],function(){
 			// 		}
 			// 	})
 			// }
+			render(){
+				$.ajax({
+					url : url.baseUrl + "index?id=1",
+					method : "GET",
+					dataType: "json",
+					success : function (res) {
+						console.log(res);
+						if(res.res_code === 1){
+							let list = res.res_body.list;
+							console.log(template);
+							// template 是模块提供的方法，用它来渲染模板引擎
+							// 第一个参数是模板引擎的script标签的id名（不用加#）
+							// 第二个参数是个对象，传模板里需要的数据
+							var html = template("indexList", { list });
+
+							$("#brand-adv").html(html);
+						}	
+					}
+				})
+			}
 		}
 		new Index();
 	})

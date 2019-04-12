@@ -26,10 +26,51 @@
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
 </div>
-		
+<div class ="brand-adv" id="brand-adv"></div>
 		<!-- list -->
-		<ul class="brand-adv">
-			<li class="brand-advLi">
+		<script type="text/html" id="indexList">
+				<ul class ="brand-adv">
+						{{each list item}}
+					<li class="brand-advLi">
+							<div class="list-header">{{item.bigTitle}}</div>
+							<div class="banner"><img src="{{item.img}}" /></div>
+							<div class="list-more"><a href="html/list.html?id={{item.Id}}">查看更多</a></div>
+							<div class="list-detail">
+								<dl>
+									<dt><a href="/html/detail.html?id={{item.id[0]}}"><img src="{{item.imgs[0]}}"></a></dt>
+									<dd>
+										<span>{{item.title[0]}}&nbsp;&nbsp;</span>
+										<span>{{item.name[0]}}</span>
+									</dd>
+								</dl>
+								<dl>
+										<dt><a href="/html/detail.html?id={{item.id[1]}}"><img src="{{item.imgs[1]}}"></a></dt>
+										<dd>
+											<span>{{item.title[1]}}&nbsp;&nbsp;</span>
+											<span>{{item.name[1]}}</span>
+										</dd>
+									</dl>
+									<dl>
+											<dt><a href="/html/detail.html?id={{item.id[2]}}"><img src="{{item.imgs[2]}}"></a></dt>
+											<dd>
+												<span>{{item.title[2]}}&nbsp;&nbsp;</span>
+												<span>{{item.name[2]}}</span>
+											</dd>
+										</dl>
+										<dl>
+												<dt><a href="/html/detail.html?id={{item.id[3]}}"><img src="{{item.imgs[3]}}"></a></dt>
+												<dd>
+													<span>{{item.title[3]}}&nbsp;&nbsp;</span>
+													<span>{{item.name[3]}}</span>
+												</dd>
+											</dl>
+							</div>
+					{{/each}}
+				</ul>
+				
+				</script>
+		
+			<!-- <li class="brand-advLi">
 				<div class="list-header">雪肌精</div>
 				<div class="banner"><img src="img/banner1.png" /></div>
 				<div class="list-more"><a href="javascript:;">查看更多</a></div>
@@ -63,113 +104,9 @@
 									</dd>
 								</dl>
 				</div>
-			</li>
-			<li class="brand-advLi">
-					<div class="list-header">雪肌精</div>
-					<div class="banner"><img src="img/banner1.png" /></div>
-					<div class="list-more"><a href="javascript:;">查看更多</a></div>
-					<div class="list-detail">
-						<dl>
-							<dt><a href="javascript:;"><img src="img/list1_1.jpg"></a></dt>
-							<dd>
-								<span>雪肌精&nbsp;&nbsp;</span>
-								<span>柔净洗颜乳</span>
-							</dd>
-						</dl>
-						<dl>
-								<dt><a href="javascript:;"><img src="img/list1_1.jpg"></a></dt>
-								<dd>
-									<span>雪肌精&nbsp;&nbsp;</span>
-									<span>柔净洗颜乳</span>
-								</dd>
-							</dl>
-							<dl>
-									<dt><a href="javascript:;"><img src="img/list1_1.jpg"></a></dt>
-									<dd>
-										<span>雪肌精&nbsp;&nbsp;</span>
-										<span>柔净洗颜乳</span>
-									</dd>
-								</dl>
-								<dl>
-										<dt><a href="javascript:;"><img src="img/list1_1.jpg"></a></dt>
-										<dd>
-											<span>雪肌精&nbsp;&nbsp;</span>
-											<span>柔净洗颜乳</span>
-										</dd>
-									</dl>
-					</div>
-				</li>
-				<li class="brand-advLi">
-						<div class="list-header">雪肌精</div>
-						<div class="banner"><img src="img/banner1.png" /></div>
-						<div class="list-more"><a href="javascript:;">查看更多</a></div>
-						<div class="list-detail">
-							<dl>
-								<dt><a href="javascript:;"><img src="img/list1_1.jpg"></a></dt>
-								<dd>
-									<span>雪肌精&nbsp;&nbsp;</span>
-									<span>柔净洗颜乳</span>
-								</dd>
-							</dl>
-							<dl>
-									<dt><a href="javascript:;"><img src="img/list1_1.jpg"></a></dt>
-									<dd>
-										<span>雪肌精&nbsp;&nbsp;</span>
-										<span>柔净洗颜乳</span>
-									</dd>
-								</dl>
-								<dl>
-										<dt><a href="javascript:;"><img src="img/list1_1.jpg"></a></dt>
-										<dd>
-											<span>雪肌精&nbsp;&nbsp;</span>
-											<span>柔净洗颜乳</span>
-										</dd>
-									</dl>
-									<dl>
-											<dt><a href="javascript:;"><img src="img/list1_1.jpg"></a></dt>
-											<dd>
-												<span>雪肌精&nbsp;&nbsp;</span>
-												<span>柔净洗颜乳</span>
-											</dd>
-										</dl>
-						</div>
-					</li>
-					<li class="brand-advLi">
-							<div class="list-header">雪肌精</div>
-							<div class="banner"><img src="img/banner1.png" /></div>
-							<div class="list-more"><a href="javascript:;">查看更多</a></div>
-							<div class="list-detail">
-								<dl>
-									<dt><a href="javascript:;"><img src="img/list1_1.jpg"></a></dt>
-									<dd>
-										<span>雪肌精&nbsp;&nbsp;</span>
-										<span>柔净洗颜乳</span>
-									</dd>
-								</dl>
-								<dl>
-										<dt><a href="javascript:;"><img src="img/list1_1.jpg"></a></dt>
-										<dd>
-											<span>雪肌精&nbsp;&nbsp;</span>
-											<span>柔净洗颜乳</span>
-										</dd>
-									</dl>
-									<dl>
-											<dt><a href="javascript:;"><img src="img/list1_1.jpg"></a></dt>
-											<dd>
-												<span>雪肌精&nbsp;&nbsp;</span>
-												<span>柔净洗颜乳</span>
-											</dd>
-										</dl>
-										<dl>
-												<dt><a href="javascript:;"><img src="img/list1_1.jpg"></a></dt>
-												<dd>
-													<span>雪肌精&nbsp;&nbsp;</span>
-													<span>柔净洗颜乳</span>
-												</dd>
-											</dl>
-							</div>
-						</li>
-		</ul>
+			</li> -->
+			
+	
 <!-- topical -->
 	<div class="topical">
 		<div class="topical-wrap">

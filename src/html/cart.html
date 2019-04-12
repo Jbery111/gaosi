@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>购物车</title>
+    <link rel="stylesheet" href="/css/cart.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-wrap">
+            <div class="logo-img">
+                <a href="/index.html"><img src="../img/login_logo.png" alt=""></a>
+            </div>
+            <ul class="breadcrumb ">
+                <li><b>我的购物袋</b>&nbsp;></li>
+                <li>填写和提交订单信息&nbsp;></li>
+                <li>成功提交订单&nbsp;</li>
+            </ul>
+        </div>
+    </header>
+    <div class="main">
+        <div class="shopping--wrap" id="shopping--wrap">
+            <div class="shopping--title">
+                <h4>我的购物袋
+                    <span id="totalNum">(0)</span>
+                </h4>
+                <a href="/html/login.html">立即结算</a>
+
+                <!-- <ul>         
+                            <li class="s-check">
+                                <div class="checkbox-custom checkbox-default">
+                                    <input type="checkbox" id="checkAll" name="select_all">
+                                    <label for="checkAll">全选</label>
+                                </div>
+                            </li>
+                            <li class="s-img"></li>
+                            <li class="s-pInfo">商品信息</li>
+                            <li class="s-price">单价</li>
+                            <li class="s-num">数量</li>
+                            <li class="s-total">小计</li>
+                            <li class="s-operate">操作</li>
+                        </ul> -->
+            </div>
+            <div class="shopping--box--head">
+                <ul>
+                    <li class="s-check">
+                        <div class="checkbox-custom checkbox-default">
+                            <input type="checkbox" id="checkAll" name="select_all" checked="checked">
+                            <label for="checkAll">全选</label>
+                        </div>
+                    </li>
+                    <li class="s-img"></li>
+                    <li class="s-pInfo">商品信息</li>
+                    <li class="s-price">单价</li>
+                    <li class="s-num">数量</li>
+                    <li class="s-total">小计</li>
+                    <li class="s-operate">操作</li>
+                </ul>
+            </div>
+            <div class="shopping--box--list" id="list-container">
+                    <!-- <ul>
+                            <li class="s-check">
+                                <div class="checkbox-custom checkbox-default">
+                                    <input class="choose-custom" id="product_2324" type="checkbox" name="product_id"
+                                        value="2324">
+                                    <label for="product_2324"></label>
+                                </div>
+                            </li>
+                            <li class="s-img"><a href="javascript:;"><img src="../img/list1_1.jpg"></a></li>
+                            <li class="s-pInfo">
+                                <div class="name"><a href="javascript:;">雪肌精净透洗颜粉</a></div>
+                                <div class="specification">容量 100g</div>
+                            </li>
+                            <li class="s-price">￥300.00</li>
+                            <li class="s-num Numinput">
+                                <div class="spinner-horizontal">
+                                    <div class="spinner--down">-</div>
+                                    <input type="text" value="1">
+                                    <div class="spinner--up ">+</div>
+                                </div>
+                            </li>
+                            <li class="s-total itemTotal">￥300.00</li>
+                            <li class="s-operate delete">
+                                <span><img src="../img/delete1.jpg" alt=""></span>
+                            </li>
+                        </ul> -->
+            </div>
+            <script type="text/html" id="shop-cart">
+                {{each list item}}
+                <ul data-id="{{item.id}}" class="shop-list">
+                    <li class="s-check">
+                        <div class="checkbox-custom checkbox-default">
+                            <input class="choose-custom check" checked="checked" id="product_2324" type="checkbox" name="product_id"
+                                value="2324">
+                            <label for="product_2324"></label>
+                        </div>
+                    </li>
+                    <li class="s-img"><a href="javascript:;"><img src="{{item.img}}"></a></li>
+                    <li class="s-pInfo">
+                        <div class="name"><a href="javascript:;">{{item.title}}</a></div>
+                        <div class="specification">容量 100g</div>
+                    </li>
+                    <li class="s-price">￥{{item.price}}</li>
+                    <li class="s-num Numinput">
+                        <div class="spinner-horizontal">
+                            <div class="spinner--down reduceNum">-</div>
+                            <input type="text" value="{{item.num}}" class="inputNum">
+                            <div class="spinner--up addNum">+</div>
+                        </div>
+                    </li>
+                    <li class="s-total itemTotal money">￥{{item.num*item.price}}</li>
+                    <li class="s-operate delete">
+                        <span><img class="delBtn" src="../img/delete1.jpg" alt=""></span>
+                    </li>
+                </ul>
+                {{/each}}
+            </script>
+            <div class="shopping--box--tips">
+                <div class="tips--title">
+                    <h5 id="isSatisfy">您还未享受到的优惠</h5>
+                    <a id="addMore" href="/index.html" class="btn">去凑单 &gt;</a>
+                </div>
+                <div class="tips-content">
+                    <p>[满赠] 满769元即享好礼七件套（套组不参与满赠）</p>
+                    <p>[满赠] 满569元即享好礼六件套（套组不参与满赠）</p>
+                    <p>[满赠] 满269即享好礼四件套（套组不参与满赠）</p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="bottom--wrap">
+                <div class="bottom--allCheck">
+                    <a href="/index.html">&lt; 继续购物</a>
+                </div>
+                <div class="bottom--button">
+                    <div class="bottom--text">
+                        <span>已选<b id="numCount">0</b>件商品,</span>
+                        <span>合计<b id="totalMoney">￥0.00</b></span>
+                    </div>
+                    <div class="bottom--close--account">
+                        <a href="javascript:void(0);" class="btn btn-info w150 checkout-btn">立即结算</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 删除modal -->
+        <div class="delete-modal" id="delete-modal">
+            <div>您确实要把该商品移出购物车吗?<span id="closeBtn">X</span></div>
+            <div><span id="okBtn">确认</span><span id="cancelBtn">取消</span></div>
+            <div class="modal-bg" id="modal-bg"></div>
+        </div>
+    </div>
+    </div>
+    <script src="/lib/requirejs/require.js" data-main="/js/cart.js"></script>
+</body>
+
+</html>

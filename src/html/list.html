@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
         <title>雪肌精</title>
-        <link rel="stylesheet" href="/css/sekkisei.css">
+        <link rel="stylesheet" href="/css/list.css">
         
 	</head>
 	<body> 
@@ -13,7 +13,7 @@
     <div class="breadcrumb">
         <ul>
             <li><a href="../index.html">首页</a></li>
-            <li class="active"><a href="../html/sekkisei.html">雪肌精</a></li>
+            <li class="active"><a href="../html/list.html">雪肌精</a></li>
         </ul>
     </div>
 
@@ -54,13 +54,13 @@
                 {{each list item}}
                 <li>
                     <span class="product">
-                        <span class="product--img"><a href="javascript:;"><img src="{{item.img}}"></a></span>
+                        <span class="product--img"><a href="detail.html?id={{item.id}}"><img src="{{item.img}}"></a></span>
                         <span class="product--brand">{{item.title}}</span>
                         <span class="product--name">{{item.name}}</span>
                         <span class="product--spec--box">
                             <span class="product--price">¥ {{item.price}}</span>
                         </span>
-                        <span class="product--button"><a href="javascript:;">立即购买</a></span>
+                        <span class="product--button"><a href="/html/detail.html?id={{item.id}}">立即购买</a></span>
                     </span>
                 </li>
                 {{/each}}
@@ -91,6 +91,6 @@
     <!-- footer -->
     <footer id="footer-container"></footer>
     <script type="text/javascript" src="/lib/jquery/jquery-3.2.1.js"></script>
-    <script src="../lib/requirejs/require.js" data-main="/js/sekkisei.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../lib/requirejs/require.js" data-main="/js/list.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>

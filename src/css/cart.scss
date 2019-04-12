@@ -1,0 +1,410 @@
+*{margin: 0;padding: 0;}
+a{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+
+header{
+	width: 100%;
+	height: 59px;
+	.header-wrap{
+		width: 97.7%;
+		height: 59px;
+		margin: 0 auto;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: space-between;
+		.logo-img{
+			width: 121px;
+			height: 46px;
+			padding-top: 5px;
+			img{
+				display: block;
+				width: 100%;
+				height: 100%;
+
+			}
+		}
+		.breadcrumb{
+			display: flex;
+			align-items: center;
+			li{
+				padding-left: 5px;
+				font-family: "Helvetica Neue", Helvetica, Arial, "hyzj", "SimHei", "SimSun", sans-serif;
+				font-size: 14px;
+				color: #7c878e;
+			}
+		}
+	}
+}
+.main{
+	width: 100%;
+	.shopping--wrap{
+		width: 97.7%;
+		margin: 0 auto;
+		padding: 0 15px;
+		box-sizing: border-box;
+		.shopping--title{
+			width: 100%;
+			height: 44px;
+			display: flex;
+			justify-content: space-between;
+			border-bottom: 2px solid #e5e5e5;
+			align-items: center;
+            margin-top: 30px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            h4{
+                background-color: #fff;
+                width:131px;
+                height: 22px;
+                font-size: 20px;
+                margin: 10px 0;
+                font-family: inherit;
+                font-weight: 500;
+                line-height: 1.1;
+                color: #7c878e;
+            }
+            a{
+                display: block;
+                width: 100px;
+                height: 30px;
+                padding: 6px 12px;
+                box-sizing: border-box;
+                color: #fff;
+                background-color: #418fde;
+                border-color: #2b82da;
+                font-size: 14px;
+                text-align: center;
+            }
+            
+        }
+            
+            .shopping--box--head{
+                width: 100%;
+                height: 46px;
+                margin-top: 20px;
+                background-color: #fff;
+                ul{
+                    width: 100%;
+                    height: 46px;
+                    padding: 10px 0;
+                    box-sizing: border-box;
+                    display: flex;
+                    font-family: "Helvetica Neue", Helvetica, Arial, "hyzj", "SimHei", "SimSun", sans-serif;
+                    font-size: 14px;
+                    color: #7c878e;
+                    border-bottom: 1px solid #e5e5e5;
+                    li{
+                        padding-right: 128px;
+                    }
+                    .s-check{
+                        .checkbox-custom{
+                            width: 78PX;
+                            height: 19px;
+                            display: flex;
+                            input{
+                                width: 19px;
+                                height: 19px;
+                            }
+                            label{
+                                display: block;
+                                width: 60px;
+                            }
+                        }
+                       
+                    }
+                    .s-img{
+                        width: 59px;
+                        height: 46px;
+                    }
+                    
+                }
+            }
+            .shopping--box--list{
+                width: 100%;
+                box-sizing: border-box;
+                background-color: #fff;
+                ul{
+                    width: 100%;
+                    height: 100px;
+                    padding: 10px 0;
+                    box-sizing: border-box;
+                    display: flex;
+                    align-items: center;
+                    font-family: "Helvetica Neue", Helvetica, Arial, "hyzj", "SimHei", "SimSun", sans-serif;
+                    font-size: 14px;
+                    color: #7c878e;
+                    border-bottom: 1px solid #e5e5e5;
+                    li{
+                        padding-right: 138px;
+                        &.delete{
+                            position: absolute;
+                            left: 1080px;
+                        }
+                        img{
+                            width: 15px;
+                            height: 15px;
+                            cursor: pointer;
+                        }
+                    }
+                    .s-check{
+                        padding-right: 80px;
+                        .checkbox-custom{
+                            width: 78PX;
+                            height: 19px;
+                            display: flex;
+                            input{
+                                width: 19px;
+                                height: 19px;
+                            }
+                            label{
+                                display: block;
+                                width: 60px;
+                            }
+                        }
+                       
+                    }
+                    .s-img {
+                        img{
+                            width: 80px;
+                            height: 80px;
+                            display: block;
+
+                        }
+                    }
+                    .s-pInfo{
+                        padding-right: 74px;
+                        div{
+                            margin-bottom: 20px;
+                        }
+                        a{
+                            width:113px;
+                            display: block;
+                            color: #7c878e;
+                        }
+                    }
+                    .s-price{
+                        padding-right:110px;
+                    }
+                    .s-num{
+                        padding-right: 80px;
+                        .spinner-horizontal{
+                            width: 80px;
+                            height: 27px;
+                            display: flex;
+                            .spinner--down{
+                                cursor: pointer;
+                                width: 25px;
+                                height: 28px;
+                                background-color: #fff;
+                                border: 1px solid #e5e5e5;
+                                text-align: center;
+                                line-height: 28px;
+                            }
+                            input{
+                                width: 50px;
+                                height: 28px;
+                                flex: 1;
+                                border: 1px solid #e5e5e5;
+                                text-align: center;
+                            }
+                            .spinner--up{
+                                cursor: pointer;
+                                width:25px;
+                                height: 28px;
+                                background-color: #fff;
+                                border: 1px solid #e5e5e5;
+                                text-align: center;
+                                line-height: 28px;
+                            }
+                            
+                        }
+                    }
+                    .s-total{
+                        padding-right:107px;
+                    }
+
+                }
+            }
+            .shopping--box--tips{
+                width: 100%;
+                height: 165px;
+                padding: 20px 0;
+                box-sizing: border-box;
+            }
+            .tips--title{
+                width: 100%;
+                height: 37px;
+                display: flex;
+                h5{
+                    width: 180px;
+                    height: 17px;
+                    margin-right: 20px;
+                    font-family: inherit;
+                    font-weight: 500;
+                    color: #7c878e;
+                    font-size: 16px;
+                }
+                a{
+                    display: block;
+                    width: 80px;
+                    height: 25px;
+                    color: #fff;
+                    background-color: #418fde;
+                    border-color: #2b82da;
+                    &.active{
+                        display: none;
+                    }
+                }
+            }
+            .tips-content{
+                width: 100%;
+                height: 77px;
+                font-family: "Helvetica Neue", Helvetica, Arial, "hyzj", "SimHei", "SimSun", sans-serif;
+                font-size: 14px;
+                color: #7c878e;
+                p{
+                    margin-bottom: 10px;
+                }
+            }
+    }
+    
+
+      // dsss
+      .bottom{
+          width: 100%;
+          .bottom--wrap{
+            width: 98.7%;
+            height: 60px;
+            margin: 0 auto;
+            display: flex;
+            margin: 20px 0;
+            box-sizing: border-box;
+            justify-content: space-between;
+            align-items: center;
+            .bottom--allCheck{
+                width: 70px;
+                height: 20px;
+                a{
+                    width:90px;
+                    height: 20px;
+                    display: block;
+                    color: #7c878e;
+                }
+            }
+                .bottom--button{
+                    width: 380px;
+                    height: 60px;
+                    display: flex;
+                    justify-content: space-between;
+                    .bottom--text{
+                        width: 210px;
+                        height:60px;
+                        text-align: center;
+                        line-height: 60px;
+                        color: #7c878e;
+                        b{
+                            color: #418fde;
+                        }
+                    }
+                    .bottom--close--account{
+                        a{
+                            display: block;
+                            width: 170px;
+                            height: 60px;
+                            text-align: center;
+                            line-height: 60px;
+                            color: #fff;
+                            background-color: #418fde;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }  
+    }
+    .delete-modal{
+        display: none;
+        margin-left: -300px;
+        margin-top: -57.5px;
+        background: #fff;
+        width: 600px;
+        height: 115px;
+        position: absolute;
+        top: 200px;
+        div:first-child{
+            padding-left: 20px;
+            background: #fff;
+            position: relative;
+            z-index: 100;
+            font-size: 14px;
+            color: #7c878e;
+            line-height: 45px;
+            height: 45px;
+            border-bottom: 1px solid #d1d1d1;
+            span{
+                cursor: pointer;
+                position: absolute;
+                right: 10px;
+                top: -10px;
+            }
+        }
+        div:nth-child(2){
+            height: 70px;
+            background: #fff;
+            position: relative;
+            z-index: 100;
+            font-size: 14px;
+            box-sizing: border-box;
+            padding-top: 25px;
+            padding-right: 15px;
+            text-align: right;
+            span{
+                // position: absolute;
+                // top: 20px;
+                // right: 10px;
+                color: #fff;
+                cursor: pointer;
+                text-align: center;
+                display: inline-block;
+                width: 50px;
+                height: 30px;
+                line-height: 30px;
+                background: red;
+                margin-left: 10px;
+                &:first-child{
+                    background-color: #418fde;
+                }
+                &:last-child{
+                    background-color: #7c878e;
+                }
+            }
+        }
+        div.modal-bg{
+            position: fixed;
+            left: 0;
+            top: 0;
+            background: #000;
+            z-index: 99;
+            opacity: 0.5;
+            top:0;
+        }
+    }
+    .blank{
+        background: url(/img/blank.png) no-repeat left center;
+        color: #7c878e;
+        position: absolute;
+        margin-left: -180px;
+        margin-top: -80px;
+        width: 280px;
+        height: 150px;
+        line-height: 150px;
+        padding-left: 110px;
+        a{
+            color: #ed302a;
+            text-decoration: underline;
+        }
+    }
+    
+}
