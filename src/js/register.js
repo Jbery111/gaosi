@@ -1,6 +1,6 @@
 require(["require.config"],function(){
     require(["jquery"],() => {
-        class Login{
+        class Register{
             constructor(){
                 this.submit();
             }
@@ -11,13 +11,13 @@ require(["require.config"],function(){
                         password = $("#password").val();
                     console.log(username,password);
                     $.ajax({
-                        url: "http://localhost/api/login.php",
+                        url: "http://localhost/api/register.php",
                         method: "POST",
                         data: {username,password},
                         dataType: "json",
                         success : function(res){
                             if(res.res_code === 1){
-                                if(confirm("登录成功，是否前往首页"))
+                                if(confirm("注册成功，是否前往首页"))
                                     location.href = "/index.html";
                                 //存
                                 localStorage.setItem("login", JSON.stringify({username}));
@@ -29,6 +29,6 @@ require(["require.config"],function(){
                 })
             }
         }
-        new Login();
+        new Register();
     })
 })

@@ -56,12 +56,16 @@ header{
 
         }
         .box1{
+            margin-top: 15px;
             width: 100%;
             height: 40px;
             font-family: "Helvetica Neue", Helvetica, Arial, "hyzj", "SimHei", "SimSun", sans-serif;
             font-size: 14px;
             line-height: 1.42857;
             color: #7c878e;
+            a{
+                color: #7c878e;
+            }
         }
         .box2{
             width: 100%;
