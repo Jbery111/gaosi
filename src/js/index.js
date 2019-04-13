@@ -9,7 +9,24 @@ require(["require.config"],function(){
 				this.search();
 				// this.caty();
 				this.render();
+				this.swiper();
 			}
+			// 轮播图
+            swiper(){
+                var mySwiper = new Swiper ('.swiper-container', {
+                    loop: true, // 循环模式选项
+                    // 自动播放
+                    autoplay:true,
+                    //淡入淡出
+                    effect : 'fade',
+                    
+                    // 如果需要分页器
+                    pagination: {
+                      el: '.swiper-pagination',
+                      clickable :true,
+                    },
+                  })   
+            }
 			search () {
 				let _this = this;
 				this.textfield.on("keyup", function () {

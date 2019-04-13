@@ -142,6 +142,7 @@ require(["require.config"],() => {
                     }
                 })
                 $("#numCount").html(number);
+                $("#totalNum").html("("+number+")");
             }
             //存localstorage
             storage(id,num) {
